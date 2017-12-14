@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:User:index{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.lastname) }}
+
+    <button type="submit">Edit</button>
+    {{ form_end(form) }}
+{% endblock %}
