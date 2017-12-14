@@ -21,19 +21,7 @@
         </div>
         <div class="col-xs-12 col-sm-offset-3 col-sm-6">
             <div class="panel panel-default">
-                <ul class="list-group" id="contact-list">
-                    {% for user in friends %}
-                    <li class="list-group-item">
-                        <div class="col-xs-12 col-sm-9">
-                            <span class="name">{{ user.username }}</span><br/>
-                            <span class="visible-xs"> <span class="text-muted">{{ user.email }}</span><br/></span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                        {% else %}
-                        <h2>No friends has this user</h2>
-                    {% endfor %}
-                </ul>
+                {{ render(controller('AppBundle:Comment:getAll')) }}
             </div>
         </div>
     </div>

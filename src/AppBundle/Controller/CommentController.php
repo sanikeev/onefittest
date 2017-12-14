@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 /**
  * Class CommentController
  * @package AppBundle\Controller
- * @Route('/comment')
+ * @Route("/comment")
  */
 class CommentController extends Controller
 {
@@ -21,7 +21,7 @@ class CommentController extends Controller
      */
     public function getAllAction()
     {
-        return $this->render('');
+        return $this->render('AppBundle:User:comment.html.twig');
     }
 
     /**
